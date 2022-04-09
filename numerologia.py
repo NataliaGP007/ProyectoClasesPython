@@ -107,52 +107,40 @@ class Abstracta(ABC):
         #Este metodo identificará el signo zodiacal del usuario.
         mesNacimiento = mesNacimiento
         diaNacimiento = diaNacimiento
-        if (mesNacimiento == 12 and diaNacimiento >= 22) or (
-                mesNacimiento == 1 and diaNacimiento <= 20):
+        if (mesNacimiento == 12 and diaNacimiento >= 22) or (mesNacimiento == 1 and diaNacimiento <= 20):
             signoZodiacal = 'Capricornio'
             return signoZodiacal
-        if (mesNacimiento == 1 and diaNacimiento >= 22) or (
-                mesNacimiento == 2 and diaNacimiento <= 19):
+        if (mesNacimiento == 1 and diaNacimiento >= 22) or (mesNacimiento == 2 and diaNacimiento <= 19):
             signoZodiacal = 'Acuario'
             return signoZodiacal
-        if (mesNacimiento == 2 and diaNacimiento >= 20) or (
-                mesNacimiento == 3 and diaNacimiento <= 20):
+        if (mesNacimiento == 2 and diaNacimiento >= 20) or (mesNacimiento == 3 and diaNacimiento <= 20):
             signoZodiacal = 'Piscis'
             return signoZodiacal
-        if (mesNacimiento == 3 and diaNacimiento >= 21) or (
-                mesNacimiento == 4 and diaNacimiento <= 20):
+        if (mesNacimiento == 3 and diaNacimiento >= 21) or (mesNacimiento == 4 and diaNacimiento <= 20):
             signoZodiacal = 'Aries'
             return signoZodiacal
-        if (mesNacimiento == 4 and diaNacimiento >= 21) or (
-                mesNacimiento == 5 and diaNacimiento <= 20):
+        if (mesNacimiento == 4 and diaNacimiento >= 21) or (mesNacimiento == 5 and diaNacimiento <= 20):
             signoZodiacal = 'Tauro'
             return signoZodiacal
-        if (mesNacimiento == 5 and diaNacimiento >= 21) or (
-                mesNacimiento == 6 and diaNacimiento <= 21):
+        if (mesNacimiento == 5 and diaNacimiento >= 21) or (mesNacimiento == 6 and diaNacimiento <= 21):
             signoZodiacal = 'Géminis'
             return signoZodiacal
-        if (mesNacimiento == 6 and diaNacimiento >= 22) or (
-                mesNacimiento == 7 and diaNacimiento <= 22):
+        if (mesNacimiento == 6 and diaNacimiento >= 22) or (mesNacimiento == 7 and diaNacimiento <= 22):
             signoZodiacal = 'Cáncer'
             return signoZodiacal
-        if (mesNacimiento == 7 and diaNacimiento >= 23) or (
-                mesNacimiento == 8 and diaNacimiento <= 23):
+        if (mesNacimiento == 7 and diaNacimiento >= 23) or (mesNacimiento == 8 and diaNacimiento <= 23):
             signoZodiacal = 'Leo'
             return signoZodiacal
-        if (mesNacimiento == 8 and diaNacimiento >= 24) or (
-                mesNacimiento == 9 and diaNacimiento <= 22):
+        if (mesNacimiento == 8 and diaNacimiento >= 24) or (mesNacimiento == 9 and diaNacimiento <= 22):
             signoZodiacal = 'Virgo'
             return signoZodiacal
-        if (mesNacimiento == 9 and diaNacimiento >= 23) or (
-                mesNacimiento == 10 and diaNacimiento <= 22):
+        if (mesNacimiento == 9 and diaNacimiento >= 23) or (mesNacimiento == 10 and diaNacimiento <= 22):
             signoZodiacal = 'Libra'
             return signoZodiacal
-        if (mesNacimiento == 10 and diaNacimiento >= 23) or (
-                mesNacimiento == 11 and diaNacimiento <= 22):
+        if (mesNacimiento == 10 and diaNacimiento >= 23) or (mesNacimiento == 11 and diaNacimiento <= 22):
             signoZodiacal = 'Escorpio'
             return signoZodiacal
-        if (mesNacimiento == 11 and diaNacimiento >= 23) or (
-                mesNacimiento == 12 and diaNacimiento <= 21):
+        if (mesNacimiento == 11 and diaNacimiento >= 23) or (mesNacimiento == 12 and diaNacimiento <= 21):
             signoZodiacal = 'Sagitario'
             return signoZodiacal
 
@@ -183,3 +171,4 @@ class Main:
         print(abstracta.calcularEdad(2022, 4, 1, 2003, 7, 27))
         print(abstracta.identificarSignoZodiacal(7, 27))
         print(abstracta.calcularNumeroSuerte(2003))
+        
