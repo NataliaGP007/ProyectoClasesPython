@@ -91,12 +91,6 @@ class Abstracta(ABC):
     @staticmethod
     def calcularEdad(anioActual, mesActual, diaActual, anioNacimiento, mesNacimiento, diaNacimiento):
         # Este metodo calculará la edad del usuario en horas.
-        anioActual = anioActual
-        mesActual = mesActual
-        diaActual = diaActual
-        anioNacimiento = anioNacimiento
-        mesNacimiento = mesNacimiento
-        diaNacimiento = diaNacimiento
         edad = anioActual - anioNacimiento
         if (mesActual < mesNacimiento) or (mesActual == mesNacimiento and diaActual < diaNacimiento):
             edad = edad - 1
@@ -105,49 +99,37 @@ class Abstracta(ABC):
     @staticmethod
     def identificarSignoZodiacal(mesNacimiento, diaNacimiento):
         #Este metodo identificará el signo zodiacal del usuario.
-        mesNacimiento = mesNacimiento
-        diaNacimiento = diaNacimiento
+        signoZodiacal = " "
         if (mesNacimiento == 12 and diaNacimiento >= 22) or (mesNacimiento == 1 and diaNacimiento <= 20):
             signoZodiacal = 'Capricornio'
-            return signoZodiacal
         if (mesNacimiento == 1 and diaNacimiento >= 22) or (mesNacimiento == 2 and diaNacimiento <= 19):
             signoZodiacal = 'Acuario'
-            return signoZodiacal
         if (mesNacimiento == 2 and diaNacimiento >= 20) or (mesNacimiento == 3 and diaNacimiento <= 20):
             signoZodiacal = 'Piscis'
-            return signoZodiacal
         if (mesNacimiento == 3 and diaNacimiento >= 21) or (mesNacimiento == 4 and diaNacimiento <= 20):
             signoZodiacal = 'Aries'
-            return signoZodiacal
         if (mesNacimiento == 4 and diaNacimiento >= 21) or (mesNacimiento == 5 and diaNacimiento <= 20):
             signoZodiacal = 'Tauro'
-            return signoZodiacal
         if (mesNacimiento == 5 and diaNacimiento >= 21) or (mesNacimiento == 6 and diaNacimiento <= 21):
             signoZodiacal = 'Géminis'
-            return signoZodiacal
         if (mesNacimiento == 6 and diaNacimiento >= 22) or (mesNacimiento == 7 and diaNacimiento <= 22):
             signoZodiacal = 'Cáncer'
-            return signoZodiacal
         if (mesNacimiento == 7 and diaNacimiento >= 23) or (mesNacimiento == 8 and diaNacimiento <= 23):
             signoZodiacal = 'Leo'
-            return signoZodiacal
         if (mesNacimiento == 8 and diaNacimiento >= 24) or (mesNacimiento == 9 and diaNacimiento <= 22):
             signoZodiacal = 'Virgo'
-            return signoZodiacal
         if (mesNacimiento == 9 and diaNacimiento >= 23) or (mesNacimiento == 10 and diaNacimiento <= 22):
             signoZodiacal = 'Libra'
-            return signoZodiacal
         if (mesNacimiento == 10 and diaNacimiento >= 23) or (mesNacimiento == 11 and diaNacimiento <= 22):
             signoZodiacal = 'Escorpio'
-            return signoZodiacal
         if (mesNacimiento == 11 and diaNacimiento >= 23) or (mesNacimiento == 12 and diaNacimiento <= 21):
             signoZodiacal = 'Sagitario'
-            return signoZodiacal
+        
+        return signoZodiacal
 
     @staticmethod
     def calcularNumeroSuerte (anioNacimiento):
         # Este metodo calculará el numero de la suerte del usuario.
-        anioNacimiento =anioNacimiento
         numeroSuerte = 0
         while anioNacimiento > 0:
             numeroSuerte = numeroSuerte + anioNacimiento % 10
