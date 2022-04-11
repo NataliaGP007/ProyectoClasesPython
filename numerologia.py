@@ -145,12 +145,11 @@ class Main:
     if __name__ == "__main__":
         #Instancia
         numero = Numerologia()
-        abstracta = Abstracta()
         print(numero.calcularEdad(2022, 4, 1, 2003, 7, 27))
         print(numero.convertirEdadEnHoras())
         print(numero.identificarSignoZodiacal())
         print(numero.calcularNumeroSuerte())
-        print(abstracta.calcularEdad(2022, 4, 1, 2003, 7, 27))
-        print(abstracta.identificarSignoZodiacal(7, 27))
-        print(abstracta.calcularNumeroSuerte(2003))
+        print(Abstracta.calcularEdad(2022, 4, 1, 2003, 7, 27))
+        print(Abstracta.identificarSignoZodiacal(7, 27))
+        print(Abstracta.calcularNumeroSuerte(2003))
         
